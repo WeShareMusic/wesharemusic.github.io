@@ -155,6 +155,40 @@ header .header-content {
   padding: 100px 15px 100px;
   width: 100%;
 }
+
+header .header-content-left {
+  position: relative;
+  width: 50%;
+}
+
+
+header blockquote {
+  border: 0;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 4em;
+  width: 60%;
+  color: #333;
+}
+
+header blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #333;
+}
+header blockquote::after {
+  display: block;
+  content: "\201C";
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transform: rotate(180deg);
+  color: #333;
+}
+
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   margin-top: 0;
